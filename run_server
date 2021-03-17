@@ -1,0 +1,6 @@
+#!/bin/bash
+cd site && (
+
+	../hugo/hugo server -D
+
+)

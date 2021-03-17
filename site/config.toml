@@ -1,0 +1,14 @@
+# general config
+title = "My New Hugo Site"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+
+# markdown config
+[markup.goldmark.renderer]
+unsafe = true
+
+# begin of .Site.Params config
+[Params]
+
+	# project config
+	config_toml_param = "test"

@@ -1,0 +1,14 @@
+{{ define "content" }}
+<h1>INDEX {{ .Site.Params.config_toml_param }}</h1>
+
+{{ .Content }}
+
+<ul>
+<li>{{ .Site.Params.config_toml_param }}</li>
+<li>{{ .Params.index_front_matter_param }}</li>
+{{ range .Pages }}
+	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end}}
+</ul>
+
+{{ end }}
